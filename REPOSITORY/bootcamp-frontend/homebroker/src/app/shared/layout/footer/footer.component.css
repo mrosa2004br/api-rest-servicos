@@ -1,0 +1,27 @@
+.footer{
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+
+  width: 100%;
+  padding: 1rem 1.5rem;
+
+  background-color: var(--primary-color);
+
+
+}
+
+@media screen and (max-width:768px) {
+  .header{
+    justify-content: center;
+  }
+}
+
+.footer span{
+  font-size: 1.1rem;
+  font-weight: 300;
+}

@@ -1,4 +1,4 @@
-package br.com.alura.forum.controller;
+findIntrumentopackage br.com.alura.forum.controller;
 
 import java.net.URI;
 import java.util.List;
