@@ -10,7 +10,7 @@ import Stock from '../../shared/models/stock-models';
 export class DashboardPageComponent implements OnInit {
 
   stocks: Stock[] = [];
-
+  filter: string = '';
   constructor(private dashboardService: DashboardService) { }
 
   ngOnInit(): void {

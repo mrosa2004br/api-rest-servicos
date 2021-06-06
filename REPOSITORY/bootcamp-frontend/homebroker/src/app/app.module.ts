@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { registerLocaleData } from '@angular/common';
 import localePT from '@angular/common/locales/pt';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 registerLocaleData(localePT);
 
@@ -18,7 +20,8 @@ registerLocaleData(localePT);
     BrowserModule,
     AppRoutingModule,
     DashboardModule,
-    SharedModule
+    SharedModule,
+    NgbModule
   ],
   providers: [ { provide: LOCALE_ID, useValue: 'pt-BR'} ],
   bootstrap: [AppComponent]

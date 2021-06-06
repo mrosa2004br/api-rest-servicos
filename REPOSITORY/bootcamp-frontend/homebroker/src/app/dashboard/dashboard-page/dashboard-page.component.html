@@ -1,6 +1,18 @@
-<div class="container">
-
-  <app-stock-card *ngFor="let stock of stocks" [stock]="stock" ></app-stock-card>
-
+<div class="text-center mt-3 mb-3">
+  <form>
+      <input
+          class="rounded"
+          type="search"
+          placeholder="search..."
+          autofocus
+          (keyup) = "filter = $event.target.value">
+  </form>
 </div>
 
+<!-- <div class="container">
+  <app-stock-card [stock]="stocks | filterBySymbol: filter" ></app-stock-card>
+</div> -->
+
+<div class="container">
+  <app-stock-card [stock]="stocks" ></app-stock-card>
+</div>
